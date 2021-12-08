@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        let rock = 0;
+        let paper = 1;
+        let scissors = 2;
+
+        function computerPlay() {
+            
+            randomNum = Math.floor(Math.random() * 3);
+            console.log(randomNum);
+            if (randomNum == rock) {
+                console.log("Rock")
+            } else if (randomNum == paper) {
+                console.log("Paper")
+            } else {
+                console.log("Scissors")
+            }
+        }
+        computerPlay();
+    </script>
+
+</head>
+</html>
