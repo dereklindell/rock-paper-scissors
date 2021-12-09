@@ -12,18 +12,43 @@
         let scissors = 2;
 
         function computerPlay() {
-            
             randomNum = Math.floor(Math.random() * 3);
-            console.log(randomNum);
             if (randomNum == rock) {
-                console.log("Rock")
+                return computerSelection == rock;
             } else if (randomNum == paper) {
-                console.log("Paper")
+                return computerSelection == paper;
             } else {
-                console.log("Scissors")
+                return computerSelection == scissors;
             }
         }
-        computerPlay();
+
+        function playRound (playerSelection, computerSelection) {
+            if (playerSelection == rock && computerSelection == paper) {
+                console.log("You lose! Paper beats Rock")
+            } else if (playerSelection == rock && computerSelection == scissors) {
+                console.log("You win! Rock beats Scissors")
+            } else if (playerSelection == rock && computerSelection == rock){
+                console.log("You've tied, Rock and Rock!")
+            } else if (playerSelection == paper && computerSelection == scissors) {
+                console.log("You lose! Scissors beat Paper!")
+            } else if (playerSelection == paper && computerSelection == rock) {
+                console.log("You win! Paper beats Rock")
+            } else if (playerSelection == paper && computerSelection == paper){
+                console.log("You've tied, Paper and Paper!")
+            } else if (playerSelection == scissors && computerSelection == rock) {
+                console.log("You lose! Rock beats Scissors!")
+            } else if (playerSelection == scissors && computerSelection == paper) {
+                console.log("You win! Scissors beats Paper!")
+            } else if (playerSelection == scissors && computerSelection == scissors) {
+                console.log("You've tied! Scissors and Scissors!")
+            }
+        };
+
+        //playerSelection = prompt().toLowerCase();
+        playerSelection = "rock"
+        console.log(computerPlay());
+        const computerSelection = computerPlay();
+        playRound(playerSelection, computerSelection);
     </script>
 
 </head>
