@@ -5,61 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <script>
-        let rock = "rock";
-        let paper = "paper";
-        let scissors = 'scissors';
-        
-        function computerPlay(choice) {
-            randomNum = Math.floor(Math.random() * 3);
-            console.log(randomNum)
-            if (randomNum == 0) {
-                return "rock";
-            } else if (randomNum == 1) {
-                return "paper";
-            } else {
-                return "scissors";
-            }
-        }
-
-        function playRound (playerSelection, computerSelection) {
-            if (playerSelection == "rock" && computerSelection == "paper") {
-                console.log("You lose! Paper beats Rock");
-            } else if (playerSelection == "rock" && computerSelection == "scissors") {
-                console.log("You win! Rock beats Scissors");
-            } else if (playerSelection == "rock" && computerSelection == "rock"){
-                console.log("You've tied, Rock and Rock!");
-            } else if (playerSelection == "paper" && computerSelection == "scissors") {
-                console.log("You lose! Scissors beat Paper!");
-            } else if (playerSelection == "paper" && computerSelection == "rock") {
-                console.log("You win! Paper beats Rock");
-            } else if (playerSelection == "paper" && computerSelection == "paper"){
-                console.log("You've tied, Paper and Paper!");
-            } else if (playerSelection == "scissors" && computerSelection == "rock") {
-                console.log("You lose! Rock beats Scissors!");
-            } else if (playerSelection == "scissors" && computerSelection == "paper") {
-                console.log("You win! Scissors beats Paper!");
-            } else if (playerSelection == "scissors" && computerSelection == "scissors") {
-                console.log("You've tied! Scissors and Scissors!");
-            }
-        };
-
-        function game() {
-            i = 0;
-
-            while (i <= 4) {
-                let playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
-                const computerSelection = computerPlay();
-                console.log(`The computer chose ${computerSelection}`);
-                console.log(`You chose ${playerSelection}`);
-                console.log(playRound(playerSelection, computerSelection));
-                i++;
-            }
-        } 
-
-        game();
-    </script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="rockpaperscissors-ui1.js" defer></script>
 
 </head>
 </html>
