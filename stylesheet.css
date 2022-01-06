@@ -52,6 +52,5 @@ img {
     border-radius: 3px;
     padding:20px;
     background-color: white;
-    max-width: 800px;
-    min-width: 500px;
+    min-width:600px;
 }
