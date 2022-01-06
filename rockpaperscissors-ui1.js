@@ -96,7 +96,7 @@ function playRound (playerSelection, computerSelection) {
         playerScoreUI.textContent = `Player Score: ${playerScore}`;
         computerScoreUI.textContent = `Computer Score: ${computerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
-        roundResults.textContent = "You've gained a point'! Scissors beats Paper!";
+        roundResults.textContent = "You've gained a point! Scissors beats Paper!";
         playerScore++;
 
         playerScoreUI.textContent = `Player Score: ${playerScore}`;

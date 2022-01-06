@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fc7262;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    width:100%;
+    height: auto;
+}
+
+#title {
+    display:flex;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+
+#rock, #paper, #scissors {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    border: solid #2e2e2e 2px;
+    border-radius: 3px;
+}
+
+#welcome {
+    display:flex;
+    justify-content: center;
+    margin:50px;
+}
+
+#buttons {
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+#game {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border: solid #2e2e2e 5px;
+    border-radius: 3px;
+    padding:20px;
+    background-color: white;
+    max-width: 800px;
+    min-width: 500px;
+}
