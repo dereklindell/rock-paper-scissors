@@ -34,7 +34,7 @@ img {
 #welcome {
     display:flex;
     justify-content: center;
-    margin:50px;
+    margin-bottom: 40px;
 }
 
 #buttons {
@@ -52,5 +52,5 @@ img {
     border-radius: 3px;
     padding:20px;
     background-color: white;
-    min-width:600px;
+    min-width: 700px;
 }
